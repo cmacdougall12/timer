@@ -8,7 +8,7 @@ if (args.length === 0) {
     setTimeout(function() {
       //edge cases, negatives, Nan, blanks
       if (ele < 0 || isNaN(ele)===true || ele === "") {
-        
+        ele = 0;
       } else {
         //otherwise execute alarm at given time
         console.log(`This alarm goes of at ${ele} seconds`);
